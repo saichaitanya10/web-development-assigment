@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level 3 Task 1 - Image Gallery & Slideshow</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Image Gallery & Slideshow</h1>
+        
+        <section class="gallery-section">
+            <h2>Image Gallery with Enlarge on Click</h2>
+            <div class="gallery">
+                <div class="thumbnail">
+                    <img src="https://images.pexels.com/photos/3849167/pexels-photo-3849167.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    data-full="https://images.pexels.com/photos/3849167/pexels-photo-3849167.jpeg?auto=compress&cs=tinysrgb&w=600">
+                </div>
+                <div class="thumbnail">
+                    <img src="https://images.pexels.com/photos/4449427/pexels-photo-4449427.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                    data-full="https://images.pexels.com/photos/4449427/pexels-photo-4449427.jpeg?auto=compress&cs=tinysrgb&w=600">
+                </div>
+                <div class="thumbnail">
+                    <img src="https://images.pexels.com/photos/10211883/pexels-photo-10211883.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    data-full="https://images.pexels.com/photos/10211883/pexels-photo-10211883.jpeg?auto=compress&cs=tinysrgb&w=600">
+                </div>
+                <div class="thumbnail">
+                    <img src="https://images.pexels.com/photos/28608383/pexels-photo-28608383/free-photo-of-bustling-tokyo-street-with-skytree-view.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    data-full="https://images.pexels.com/photos/28608383/pexels-photo-28608383/free-photo-of-bustling-tokyo-street-with-skytree-view.jpeg?auto=compress&cs=tinysrgb&w=600">
+                </div>
+                <div class="thumbnail">
+                    <img src="https://images.pexels.com/photos/2158963/pexels-photo-2158963.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    data-full="https://images.pexels.com/photos/2158963/pexels-photo-2158963.jpeg?auto=compress&cs=tinysrgb&w=600">
+                </div>
+                <div class="thumbnail">
+                    <img src="https://images.pexels.com/photos/3642537/pexels-photo-3642537.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    data-full="https://images.pexels.com/photos/3642537/pexels-photo-3642537.jpeg?auto=compress&cs=tinysrgb&w=600">
+                </div>
+            </div>
+            
+            <!-- Modal for enlarged image -->
+            <div id="imageModal" class="modal">
+                <span class="close-btn">&times;</span>
+                <img class="modal-content" id="enlargedImage">
+            </div>
+        </section>
+        
+        <section class="slideshow-section">
+            <h2>Automatic Image Slideshow</h2>
+            <div class="slideshow-container">
+                <div class="slideshow">
+                    <div class="slide fade">
+                        <img src="https://images.pexels.com/photos/30958797/pexels-photo-30958797/free-photo-of-cyclist-enjoying-beach-ride-in-argentina.jpeg?auto=compress&cs=tinysrgb&w=600">
+                    </div>
+                    <div class="slide fade">
+                        <img src="https://images.pexels.com/photos/5807677/pexels-photo-5807677.jpeg?auto=compress&cs=tinysrgb&w=600">
+                    </div>
+                    <div class="slide fade">
+                        <img src="https://images.pexels.com/photos/160949/bike-cycling-trail-cyclist-160949.jpeg?auto=compress&cs=tinysrgb&w=600">
+                    </div>
+                    <div class="slide fade">
+                        <img src="https://images.pexels.com/photos/5807741/pexels-photo-5807741.jpeg?auto=compress&cs=tinysrgb&w=600">
+                    </div>
+                </div>
+                
+                <!-- Navigation dots -->
+                <div class="dots-container">
+                    <span class="dot" onclick="currentSlide(0)"></span>
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
